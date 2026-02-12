@@ -1,74 +1,117 @@
-# Falcon-9-Launch-Success-Evaluation
+# Falcon 9 Launch Success and Cost Optimization Analytics System
 
-This repository presents an end-to-end data science project analyzing SpaceX Falcon 9 launch missions to identify technical, operational
-, and environmental factors influencing launch success. The project is implemented as a production-oriented analytical workflow, covering data acquisition,
-transformation, exploratory analysis, interactive visualization, dashboard delivery, and predictive modeling.
+This repository presents an end-to-end data science and analytics project analyzing SpaceX Falcon 9 launch missions to identify key drivers of launch success, booster reusability, and mission cost efficiency using machine learning and interactive dashboards.
 
----
+The project demonstrates a production-style analytical workflow including data acquisition, transformation, exploratory analysis, predictive modeling, and dashboard-based insight delivery aligned with real-world data scientist responsibilities.
 
-## Project Workflow
+------------------------------------------------------------
 
-**Data Collection**
-- Falcon 9 launch data collected programmatically using REST APIs
-- Supplemental mission data obtained via web scraping
+## Business Objective
 
-**Data Wrangling**
-- Cleaning, transformation, and feature engineering using Python
-- Relational querying and aggregation performed using SQL for structured analysis
+Space launches involve extremely high operational cost and technical risk.  
+Understanding factors influencing launch success and reusable booster recovery can significantly improve mission planning, reliability, and cost efficiency.
 
-**Exploratory Data Analysis (EDA)**
-- Statistical and visual exploration of launch outcomes
-- Analysis across payload mass, orbit type, booster version, and launch site
-- Combination of distribution analysis and grouped comparisons
+This project analyzes Falcon 9 mission data to:
 
-**Geospatial Analysis**
-- Interactive geospatial analysis using Folium
-- Mapping and spatial evaluation of launch sites with respect to:
-  - Railways
-  - Highways
-  - Coastlines
+- Identify key drivers of launch and landing success  
+- Predict first-stage booster landing outcomes  
+- Analyze impact of payload mass, orbit type, and launch site  
+- Evaluate cost efficiency of reusable rocket technology  
+- Deliver interactive dashboard for analytical and decision support  
 
-**Interactive Dashboard**
-- A lightweight interactive dashboard developed to support dynamic analysis
-- Dropdown selectors and sliders enable:
-  - Launch site-based filtering
-  - Payload range adjustment
-  - Real-time observation of launch success rates
+------------------------------------------------------------
 
-**Machine Learning**
-- Multiple supervised classification models developed to predict launch success:
-  - Logistic Regression
-  - Support Vector Machine (SVM)
-  - Decision Tree Classifier
-  - K-Nearest Neighbors (KNN)
-- Models evaluated using train/test split and cross-validation
-- **Decision Tree Classifier achieved the highest performance with approximately 94% test accuracy**, demonstrating strong predictive capability on the given feature set
+## Tech Stack
 
----
+Programming: Python, SQL  
+Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Folium  
+Machine Learning: Logistic Regression, Support Vector Machine, Decision Tree, K-Nearest Neighbors  
+Visualization: Power BI, Interactive Dashboard  
+Data Sources: SpaceX REST API, Web Scraping  
+Deployment: GitHub Pages (Interactive dashboard hosting)
 
-## Interactive Visualizations
+------------------------------------------------------------
 
-Geospatial visualizations created with Folium are exported as standalone HTML files and are not rendered interactively within GitHub notebook previews.
+## Live Interactive Dashboard
 
-✅ Recommended viewing method: **GitHub Pages**
+Project Link:  
+https://srikanth-ai53.github.io/Falcon-9-Launch-Success-Evaluation/
 
-🔗 **Live Dashboard**  
-[https://srikanth-ai53.github.io/Falcon-9-Launch-Success-Evaluation/](https://srikanth-ai53.github.io/Falcon-9-Launch-Success-Evaluation/)
+Dashboard features:
+- Launch success rate analysis  
+- Payload vs success relationship  
+- Launch site performance comparison  
+- Booster reuse and landing insights  
+- Interactive filtering for dynamic analysis  
 
-The deployed dashboard and maps support full interactivity, including zooming, panning, tooltips, dropdown controls, and sliders.
+------------------------------------------------------------
 
----
+## End-to-End Data Science Workflow
 
-## Repository Structure
+### Data Collection
+- Extracted structured launch data using SpaceX REST APIs  
+- Supplemented dataset through web scraping of mission records  
 
----
+### Data Processing and Transformation
+- Cleaned and preprocessed raw data using Python  
+- Structured dataset using SQL queries and aggregations  
+- Performed feature engineering for modeling  
 
-## Summary
-This project demonstrates applied, full-cycle data science execution — from raw data ingestion to interactive 
-analytical delivery and predictive modeling. Emphasis is placed on deploying interpretable, decision-support tools rather than static notebook-only outputs, 
-aligning with real-world data analyst and junior data scientist expectations.
+### Exploratory Data Analysis
+- Analyzed launch success patterns across payload mass, orbit type, and launch site  
+- Evaluated impact of booster reuse on mission outcomes  
+- Conducted statistical and visual analysis to identify trends  
 
----
+### Geospatial Analysis
+- Built interactive geospatial visualizations using Folium  
+- Evaluated geographic influence of launch site location on operations  
 
-**Author**  
-Srikanth
+### Machine Learning Modeling
+Developed supervised classification models to predict landing success:
+
+- Logistic Regression  
+- Support Vector Machine  
+- Decision Tree Classifier  
+- K-Nearest Neighbors  
+
+Best Performing Model: Decision Tree  
+Accuracy: ~94% on test dataset  
+
+Models evaluated using cross-validation and performance metrics.
+
+### Dashboard and Insight Delivery
+- Designed interactive dashboard for KPI and trend analysis  
+- Visualized launch success patterns and cost efficiency drivers  
+- Built decision-support views for mission planning analysis  
+- Enabled dynamic filtering by payload and launch site  
+
+------------------------------------------------------------
+
+## Key Insights
+
+- Reusable boosters significantly improve mission cost efficiency  
+- Payload mass strongly influences landing success probability  
+- Orbit type and configuration affect mission outcomes  
+- Launch site selection impacts reliability and recovery success  
+- Predictive modeling enables estimation of booster landing probability  
+
+------------------------------------------------------------
+
+## Project Impact
+
+This project demonstrates a complete real-world data science workflow:
+
+- API-based data extraction and web data collection  
+- SQL-based data transformation and structured analysis  
+- Machine learning model development and evaluation  
+- Interactive dashboard creation for decision support  
+- End-to-end analytics pipeline from raw data to insight delivery  
+
+Represents a production-style analytical system aligned with modern data scientist and analytics roles.
+
+------------------------------------------------------------
+
+## Author
+
+Srikanth Ponnala  
+Data Scientist | Machine Learning and Analytics
